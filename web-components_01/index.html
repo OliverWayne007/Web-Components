@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components 01</title>
+    <style>
+        h2
+        {
+            color: blue;
+        }
+        h3
+        {
+            color: brown;
+        }
+        .headingContainer
+        {
+            text-align: center;
+            padding: 10px;
+            background-color: yellow;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Traditional HTML elements/tags -->
+    <div class = "headingContainer" description = "This is the Heading Container">
+        <h1 class = "headingContainer-h1"></h1>
+        <h2> This is me learning about Web Components </h2>
+        <h3> Web Components are being used in my current project </h3>
+    </div>
+
+    <!-- Custom HTML elements/tags -->
+    <user-card name = "Oliver Queen"></user-card>
+    <user-card name = "Bruce Wayne"></user-card>
+
+    <!-- <style>
+        h2
+        {
+            color: blue;
+        }
+        h3
+        {
+            color: brown;
+        }
+    </style>
+    <h2> This is me experimenting..... </h2> -->
+    
+    <script src="userCard.js"></script>
+</body>
+</html>
