@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slots in Web Components</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/my-element.js"></script>
+  </head>
+  <body>
+    <my-element>
+      <!-- The order in which slots are written in the html file does not affect the order in which the slots appear in the UI -->
+      <!-- 
+        The order in which the slots appear in the UI depends purely on the order in which they are placed inside the render 
+        method in the class associated with the custom-element in the javascript file
+      -->
+      <p slot="footer"> This is the footer </p>  <!-- This is a named slot -->
+      <p> This is a main content..... </p>       <!-- This is a Default (unnamed) slot -->
+      <p slot="header"> This is the header </p>  <!-- This is a named slot -->
+    </my-element>
+  </body>
+</html>
