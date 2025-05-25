@@ -17,6 +17,13 @@ export class UserCard extends LitElement
     clicked: { type: Boolean }
   };
 
+  static get components()
+  {
+    return {
+      "user-details" : UserDetails
+    }
+  }
+
   static styles = css`
     h1
     {
@@ -49,7 +56,7 @@ export class UserCard extends LitElement
 
   async getUserDetails()
   {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users/5");
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/6");
     const userData = await response.json();
     this.userData = userData;
   }
